@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>web desine</title>
+        <link rel="stylesheet" href="firstweb_css.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="info">
+                <div class="overlay">
+                    <div class="phone">
+                        <img src="/home/keshab/Desktop/wbe/all-the-anime-logo-505406.png">
+                    </div>
+                </div>
+                <img src="/home/keshab/Desktop/wbe/gun.png" class="kaide">
+                <div id="circle">
+                    <div class="nav-links">
+                    <div class="features one">
+                        <img src="/home/keshab/Desktop/wbe/hut.png">
+                        <div>
+                            <h2><a href="firstweb.html">Home</a>
+                        </div>    
+                    </div>
+                    <div class="features two">
+                        <img src="/home/keshab/Desktop/wbe/cam.png">
+                        <div>
+                            <h2><a href="gallary.html">Gallary</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="features three">
+                        <img src="/home/keshab/Desktop/wbe/party.png">
+                        <div>
+                            <h2><a href="#">Plans</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="features four">
+                        <img src="/home/keshab/Desktop/wbe/fone.png">
+                        <div>
+                            <h2><a href="contact.html">Contact</a>
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>  
+            <div class="controls">
+                <img src="/home/keshab/Desktop/wbe/arrow.png" id="upBtn">
+                <h2>Gerne</h2>
+                <img src="/home/keshab/Desktop/wbe/arrow.png" id="downBtn">
+            </div>
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtne = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+            var rotateValue=circle.style.transform;
+            var rotatesum;
+
+            upBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+            downBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
+    </body>
+    </html>
